@@ -6,6 +6,20 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <input type="text" id="getal1">
+    <span>+</span>
+    <input type="text" id="getal2">
+    <button id="bereken">Bereken</button>
+    <p id="resultaat" style="padding: 0px 20px;">Het resultaat komt hier</p>
+    <p id="resultaat1"></p>
+    <script>
+        'use strict';
+        document.getElementById('bereken').addEventListener('click', function() {
+            let getal1 = parseInt(document.getElementById('getal1').value);
+            let getal2 = parseInt(document.getElementById('getal2').value);
+            let resultaat = getal1 + getal2;
+            document.getElementById('resultaat1').innerText = resultaat;
+        });
+    </script>
 </body>
 </html>
